@@ -1,27 +1,31 @@
 import styled from '@emotion/styled';
 const TransactionTable = styled.table`
-  font-family: 'Lucida Sans Unicode', 'Lucida Grande', Sans-Serif;
-  font-size: 14px;
-  border-radius: 10px;
-  border-spacing: 0;
-  text-align: center;
+  border: 1px solid #eee;
+  table-layout: fixed;
+  width: 50%;
+  margin-bottom: 20px;
 `;
 const HeadTable = styled.thead``;
+const BodyTable = styled.tbody``;
+const Tr = styled.tr``;
+const TrBody = styled.tr`
+  :nth-child(odd) {
+    background: #fff;
+  }
+  :nth-child(even) {
+    background: #f7f7f7;
+  }
+`;
 const Th = styled.th`
-  background: #bcebdd;
-  color: white;
-  text-shadow: 0 1px 1px #2d2020;
-  padding: 10px 20px;
-  border-style: solid;
-  border-width: 0 1px 1px 0;
-  border-color: white;
+  font-weight: bold;
+  padding: 5px;
+  background: #2596be;
+  border: 1px solid #dddddd;
 `;
 const Td = styled.td`
-  border-style: solid;
-  border-width: 0 1px 1px 0;
-  border-color: white;
-  padding: 10px 20px;
-  background: #f8e391;
+  padding: 5px 10px;
+  border: 1px solid #eee;
+  text-align: center;
 `;
 
-export { TransactionTable, HeadTable, Th, Td };
+export { TransactionTable, HeadTable, BodyTable, Tr, TrBody, Th, Td };
