@@ -8,6 +8,7 @@ const Item = styled.li`
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 0px 0px 4px 4px;
   gap: 20px;
+  padding: 20px;
 `;
 const Avatar = styled.img``;
 const Name = styled.p``;
