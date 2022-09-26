@@ -9,10 +9,10 @@ const HeadTable = styled.thead``;
 const BodyTable = styled.tbody``;
 const Tr = styled.tr``;
 const TrBody = styled.tr`
-  :nth-child(odd) {
+  :nth-of-type(odd) {
     background: #fff;
   }
-  :nth-child(even) {
+  :nth-of-type(even) {
     background: #f7f7f7;
   }
 `;
